@@ -1,0 +1,260 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+.gitignore
+.idea/misc.xml
+.idea/workspace.xml
+venv/Include/
+venv/Lib/site-packages/Jinja2-2.10.dist-info/
+venv/Lib/site-packages/PyNaCl-1.2.1.dist-info/
+venv/Lib/site-packages/PyYAML-3.13.dist-info/
+venv/Lib/site-packages/__pycache__/
+venv/Lib/site-packages/asn1crypto/
+venv/Lib/site-packages/asyncssh-1.13.3.dist-info/
+venv/Lib/site-packages/asyncssh/
+venv/Lib/site-packages/bcrypt/
+venv/Lib/site-packages/cffi-1.11.5.dist-info/
+venv/Lib/site-packages/cffi/
+venv/Lib/site-packages/cryptography-2.3.dist-info/
+venv/Lib/site-packages/cryptography/
+venv/Lib/site-packages/et_xmlfile-1.0.1-py3.7.egg-info/
+venv/Lib/site-packages/et_xmlfile/
+venv/Lib/site-packages/idna/__pycache__/
+venv/Lib/site-packages/jdcal-1.4.dist-info/
+venv/Lib/site-packages/jinja2/
+venv/Lib/site-packages/jnpr/
+venv/Lib/site-packages/junos_eznc-2.1.9.dist-info/
+venv/Lib/site-packages/lxml-4.2.4.dist-info/
+venv/Lib/site-packages/lxml/
+venv/Lib/site-packages/markupsafe/
+venv/Lib/site-packages/nacl/
+venv/Lib/site-packages/ncclient-0.6.0-py3.7.egg-info/
+venv/Lib/site-packages/ncclient/
+venv/Lib/site-packages/netaddr-0.7.19.dist-info/
+venv/Lib/site-packages/netaddr/
+venv/Lib/site-packages/netdev-0.9.0.dist-info/
+venv/Lib/site-packages/netdev/
+venv/Lib/site-packages/netmiko-2.2.2-py3.7.egg-info/
+venv/Lib/site-packages/netmiko/
+venv/Lib/site-packages/openpyxl-2.5.5-py3.7.egg-info/.DS_Store
+venv/Lib/site-packages/openpyxl/chartsheet/
+venv/Lib/site-packages/openpyxl/comments/
+venv/Lib/site-packages/openpyxl/descriptors/
+venv/Lib/site-packages/openpyxl/drawing/__init__.py
+venv/Lib/site-packages/openpyxl/drawing/connector.py
+venv/Lib/site-packages/openpyxl/drawing/image.py
+venv/Lib/site-packages/openpyxl/formatting/
+venv/Lib/site-packages/openpyxl/formula/
+venv/Lib/site-packages/openpyxl/packaging/
+venv/Lib/site-packages/openpyxl/workbook/
+venv/Lib/site-packages/openpyxl/worksheet/
+venv/Lib/site-packages/paramiko-2.4.1.dist-info/
+venv/Lib/site-packages/paramiko/
+venv/Lib/site-packages/pyasn1-0.4.4.dist-info/
+venv/Lib/site-packages/pyasn1/
+venv/Lib/site-packages/pycparser-2.18-py3.7.egg-info/
+venv/Lib/site-packages/pycparser/
+venv/Lib/site-packages/pyserial-3.4.dist-info/
+venv/Lib/site-packages/scp-0.11.0.dist-info/
+venv/Lib/site-packages/serial/__init__.pyc
+venv/Lib/site-packages/serial/__pycache__/
+venv/Lib/site-packages/serial/aio.pyc
+venv/Lib/site-packages/serial/rfc2217.pyc
+venv/Lib/site-packages/serial/rs485.pyc
+venv/Lib/site-packages/serial/serialcli.pyc
+venv/Lib/site-packages/serial/serialjava.pyc
+venv/Lib/site-packages/serial/serialposix.pyc
+venv/Lib/site-packages/serial/serialutil.pyc
+venv/Lib/site-packages/serial/serialwin32.pyc
+venv/Lib/site-packages/serial/threaded/__pycache__/
+venv/Lib/site-packages/serial/tools/__init__.pyc
+venv/Lib/site-packages/serial/tools/__pycache__/
+venv/Lib/site-packages/serial/tools/hexlify_codec.pyc
+venv/Lib/site-packages/serial/tools/list_ports.pyc
+venv/Lib/site-packages/serial/tools/list_ports_common.pyc
+venv/Lib/site-packages/serial/tools/list_ports_linux.pyc
+venv/Lib/site-packages/serial/tools/list_ports_osx.pyc
+venv/Lib/site-packages/serial/tools/list_ports_posix.py
+c
+venv/Lib/site-packages/serial/tools/list_ports_windows.pyc
+venv/Lib/site-packages/serial/tools/miniterm.pyc
+venv/Lib/site-packages/serial/urlhandler/__init__.pyc
+venv/Lib/site-packages/serial/urlhandler/__pycache__/
+venv/Lib/site-packages/serial/urlhandler/protocol_hwgrep.pyc
+venv/Lib/site-packages/serial/urlhandler/protocol_loop.pyc
+venv/Lib/site-packages/serial/urlhandler/protocol_rfc2217.pyc
+venv/Lib/site-packages/serial/urlhandler/protocol_socket.pyc
+venv/Lib/site-packages/serial/urlhandler/protocol_spy.pyc
+venv/Lib/site-packages/serial/win32.pyc
+venv/Lib/site-packages/setuptools-28.8.0-py3.7.egg
+venv/Lib/site-packages/six-1.11.0.dist-info/
+venv/Lib/site-packages/textfsm-0.4.1-py3.7.egg-info/
+venv/Lib/site-packages/xmltodict-0.11.0.dist-info/
+venv/Lib/site-packages/yaml/__pycache__/
+venv/Scripts/Activate.ps1
+venv/Scripts/__pycache__/
+venv/Scripts/_asyncio.pyd
+venv/Scripts/_bz2.pyd
+venv/Scripts/_contextvars.pyd
+venv/Scripts/_ctypes.pyd
+venv/Scripts/_ctypes_test.pyd
+venv/Scripts/_decimal.pyd
+venv/Scripts/_distutils_findvs.pyd
+venv/Scripts/_elementtree.pyd
+venv/Scripts/_hashlib.pyd
+venv/Scripts/_lzma.pyd
+venv/Scripts/_msi.pyd
+venv/Scripts/_multiprocessing.pyd
+venv/Scripts/_overlapped.pyd
+venv/Scripts/_queue.pyd
+venv/Scripts/_socket.pyd
+venv/Scripts/_sqlite3.pyd
+venv/Scripts/_ssl.pyd
+venv/Scripts/_testbuffer.pyd
+venv/Scripts/_testcapi.pyd
+venv/Scripts/_testconsole.pyd
+venv/Scripts/_testimportmultiple.pyd
+venv/Scripts/_testmultiphase.pyd
+venv/Scripts/_tkinter.pyd
+venv/Scripts/activate
+venv/Scripts/activate.bat
+venv/Scripts/deactivate.bat
+venv/Scripts/easy_install-3.7-script.py
+venv/Scripts/easy_install-3.7.exe
+venv/Scripts/easy_install-3.7.exe.manifest
+venv/Scripts/easy_install-script.py
+venv/Scripts/easy_install.exe
+venv/Scripts/easy_install.exe.manifest
+venv/Scripts/libcrypto-1_1.dll
+venv/Scripts/libssl-1_1.dll
+venv/Scripts/miniterm.pyc
+venv/Scripts/pip-script.py
+venv/Scripts/pip.exe
+venv/Scripts/pip.exe.manifest
+venv/Scripts/pip3-script.py
+venv/Scripts/pip3.7-script.py
+venv/Scripts/pip3.7.exe
+venv/Scripts/pip3.7.exe.manifest
+venv/Scripts/pip3.exe
+venv/Scripts/pip3.exe.manifest
+venv/Scripts/pyexpat.pyd
+venv/Scripts/python.exe
+venv/Scripts/python3.dll
+venv/Scripts/python37.dll
+venv/Scripts/pythonw.exe
+venv/Scripts/select.pyd
+venv/Scripts/sqlite3.dll
+venv/Scripts/tcl86t.dll
+venv/Scripts/tk86t.dll
+venv/Scripts/unicodedata.pyd
+venv/Scripts/vcruntime140.dll
+venv/Scripts/winsound.pyd
+venv/pyvenv.cfg
+venv/Lib/site-packages/serial/tools/list_ports_posix.pyc
+Woul
+d remove venv/Lib/site-packages/serial/tools/list_ports_windows.pyc
+.idea/
