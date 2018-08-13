@@ -1,9 +1,0 @@
-global credentials:
-  username: root
-  password: root123
-hosts:
-  - host: 192.168.10.101
-    username: root
-    password: root123
-  - host: 192.168.10.102
-  - host: 192.168.10.103
