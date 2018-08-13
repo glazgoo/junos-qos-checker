@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 import argparse
 import yaml
-from ncclient import manager
 import xmltodict
-
+import time
+import ncclient
+from ncclient import manager
+from ncclient.xml_ import *
+from ncclient.devices.junos import JunosDeviceHandler
 
 STATIC_CONNECT_PARAMS = {
     'hostkey_verify': False,
@@ -64,20 +67,26 @@ def get_config(conn_dict):
     Returns:
 
     """
+
     with manager.connect(**conn_dict) as connection:
         current_config_xml = connection.get_config(source='running').data_xml
+        connection.async_mode = False
         current_config = xmltodict.parse(current_config_xml)['rpc-reply']['data']['configuration']
         sw_version = current_config['version']
         hostname = current_config['system']['host-name']
         print(f'SW version: {sw_version}')
         print(f'hostname: {hostname}')
 
+
+
 def main():
+    start_time = time.time()
     args = get_arguments()
     parsed_yaml = read_yaml(vars(args)['src_inventory_file'])
     conn_dict = form_connection_params_from_yaml(parsed_yaml)
     for i in conn_dict:
         get_config(i)
+    print(f'It took {time.time() - start_time} seconds to run')
 
 
 if __name__ == '__main__':
