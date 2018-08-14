@@ -3,16 +3,23 @@ import argparse
 import yaml
 import xmltodict
 import time
-import ncclient
 from ncclient import manager
+from ncclient.transport.errors import AuthenticationError, SessionCloseError, SSHError, SSHUnknownHostError
 from ncclient.xml_ import *
-from ncclient.devices.junos import JunosDeviceHandler
+
 
 STATIC_CONNECT_PARAMS = {
     'hostkey_verify': False,
     'device_params': {'name':'junos'}
 }
 
+RPC_DICT = {
+    'software': 'get-software-information',
+    'cos': 'get-cos-interface-information',
+    'isis': 'get-isis-interface-information',
+    'ospf': 'get-ospf-interface-information',
+    'interfaces': 'get-interface-information'
+}
 
 def get_arguments():
     """
@@ -68,16 +75,22 @@ def get_config(conn_dict):
 
     """
 
-    with manager.connect(**conn_dict) as connection:
-        current_config_xml = connection.get_config(source='running').data_xml
-        connection.async_mode = False
-        current_config = xmltodict.parse(current_config_xml)['rpc-reply']['data']['configuration']
-        sw_version = current_config['version']
-        hostname = current_config['system']['host-name']
-        print(f'SW version: {sw_version}')
-        print(f'hostname: {hostname}')
-
-
+    
+    try:
+        with  manager.connect(**conn_dict) as connection:
+            rpc = new_ele('get-software-information')
+            software_information_xml = connection.rpc(rpc).data_xml
+            software_information = xmltodict.parse(software_information_xml)['rpc-reply']['software-information']
+            sw_version = software_information['junos-version']
+            hostname = software_information['host-name']
+            print(f'SW version: {sw_version}')
+            print(f'hostname: {hostname}')
+    except SSHError:
+        print(f'Unable to connect to device: {conn_dict["host"]}')
+    except AuthenticationError:  # NCClient auth failure
+        print(f'Authentication failed for device: {conn_dict["host"]}')
+    except:
+        print(f'Unknown error with device: {conn_dict["host"]}')
 
 def main():
     start_time = time.time()
